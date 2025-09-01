@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maaiz - Developer Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: rgb(1, 1, 22);
+            color: white;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 55px;
+            background-color: rgb(23, 23, 61);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(170, 107, 228);
+            font-size: 1.0rem;
+        }
+        .left{
+            font-size: 25px;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0; 
+        }
+        .leftSection{
+            width: 40%;
+            font-size: 3rem;
+            margin: 100px;
+        }
+        .rightSection{
+            width: 40%;
+        }
+        .rightSection img{
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+            margin: 40px;
+
+        }
+        .purple{
+            color: rgb(170, 107, 228);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        #element{
+            color: rgb(170, 107, 228);
+        }
+        main hr{
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+        .text-gray {
+            color: gray;
+        }
+        .secondSection .box{
+            background-color: white;
+            width: 80ox;
+            height: 1px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Maaiz's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="firstSection">
+            <div class="leftSection">Hi my name is <span class="purple">Muhammed Ismail Maaiz</span> 
+                <div>I am a student of Computer Science and Engineering</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection"><img src="bg.png" alt=""></div>
+        </section>
+<hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experances</h1>
+
+            <div class="box">
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Artificial intellegence', 'Web Development', 'Machine Learning'],
+          typeSpeed: 50,
+        });
+    </script>
+
+</body>
+</html>
